@@ -33,7 +33,7 @@ public class DefaultJeepSalesDao implements JeepSalesDao {
     String sql = ""
         + "SELECT * "
         + "FROM models "
-        + "WHERE model_id - :model_id AND trim_level = :trim_level";
+        + "WHERE model_id = :model_id AND trim_level = :trim_level";
     // @formatter:on
 
     Map<String, Object> params = new HashMap<>();
